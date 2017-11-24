@@ -1,3 +1,34 @@
+# 爬取最新全国区划和城乡划分代码
+
+## 如何使用
+
+```
+$ npm i
+$ npm run start
+
+F:\tjcode>npm run start
+> node Start.js
+
+北京市
+北京市 -> 市辖区
+北京市 -> 市辖区 -> 东城区
+北京市 -> 市辖区 -> 东城区 -> 东华门街道办事处
+北京市 -> 市辖区 -> 东城区 -> 景山街道办事处
+北京市 -> 市辖区 -> 东城区 -> 交道口街道办事处
+北京市 -> 市辖区 -> 东城区 -> 安定门街道办事处
+北京市 -> 市辖区 -> 东城区 -> 北新桥街道办事处
+北京市 -> 市辖区 -> 东城区 -> 东四街道办事处
+北京市 -> 市辖区 -> 东城区 -> 朝阳门街道办事处
+北京市 -> 市辖区 -> 东城区 -> 建国门街道办事处
+北京市 -> 市辖区 -> 东城区 -> 东直门街道办事处
+北京市 -> 市辖区 -> 东城区 -> 和平里街道办事处
+北京市 -> 市辖区 -> 东城区 -> 前门街道办事处
+北京市 -> 市辖区 -> 东城区 -> 崇文门外街道办事处
+终止批处理操作吗(Y/N)?
+
+```
+
+## JSON下载链接
 - [全国区划和城乡划分代码](https://github.com/godghdai/region_code/blob/master/data/%E8%A1%8C%E6%94%BF%E5%8C%BA%E5%88%92%E4%BB%A3%E7%A0%81.zip)
 - [北京市](https://github.com/godghdai/region_code/blob/master/data/%E5%8C%97%E4%BA%AC%E5%B8%82.zip)
 - [天津市](https://github.com/godghdai/region_code/blob/master/data/%E5%A4%A9%E6%B4%A5%E5%B8%82.zip)
