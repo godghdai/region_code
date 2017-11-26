@@ -29,19 +29,22 @@ F:\tjcode>npm run start
 ```
 
 
-## 增加18身份证号解析
+## 增加18位身份证号解析
 ```
 const { idcardParse } = require("./src/util/Idcard");
->　console.log(idcardParse("652822199402046016"))
-
-{ success: true,
-  province: '新疆维吾尔自治区',
-  city: '巴音郭楞蒙古自治州',
-  county: '轮台县',
-  birthday: '1994年02月04日',
-  policeCode: 60,
-  sex: '男',
-  checkCode: '6' }
+console.log(idcardParse("652822199402046016"))
+```
+```
+{
+    success: true,
+    province: '新疆维吾尔自治区',
+    city: '巴音郭楞蒙古自治州',
+    county: '轮台县',
+    birthday: '1994年02月04日',
+    policeCode: 60,
+    sex: '男',
+    checkCode: '6'
+}
 ```
 
 
