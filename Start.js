@@ -2,6 +2,7 @@ const fs = require('mz/fs');
 const { Zip, Convert, Spider } = require("./src/lib");
 const path = require('path');
 const { SAVE_BASE_PATH } = require("./config");
+const { idcardParse } = require("./src/util/Idcard");
 
 async function start(provincesStr) {
     var provinces = await Spider.filterProvince(provincesStr);

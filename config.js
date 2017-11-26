@@ -9,6 +9,7 @@ module.exports = {
         debug: false
     },
     SAVE_BASE_PATH: path.resolve(__dirname, "./data"),
+    STORE_PATH: path.resolve(__dirname, "./store/身份证行政区划代码.data"),
     ROOT_PATH: __dirname,
-    LOG_SAVE_PATH: path.resolve(__dirname, "./log"),
+    LOG_SAVE_PATH: path.resolve(__dirname, "./log")
 }

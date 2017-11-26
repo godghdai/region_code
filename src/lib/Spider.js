@@ -87,5 +87,5 @@ async function filterProvince(provincesStr) {
 module.exports = {
     getChild,
     getProvince,
-    filterProvince,
+    filterProvince
 }
