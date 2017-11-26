@@ -2,6 +2,7 @@
 
 ## 导出sqlite数据库
 ```
+--查询sql
 select a.tilte,a.level,b.total from (
 select "province" as tilte,1 as level 
 union select "city",2 
@@ -12,8 +13,10 @@ inner join (
 select level,count(*) as total from region group by level) as b 
 on a.level=b.level
 union select '','',count(*) as total from region order by total
+
 ```
-####导出结果
+#### 查询结果统计
+
 ![Alt text](./db_result.jpg)
 
 - [sqlite数据库文件下载](https://github.com/godghdai/region_code/blob/master/store/database/region_code.zip)
@@ -24,7 +27,8 @@ union select '','',count(*) as total from region order by total
 const { idcardParse } = require("./src/util/Idcard");
 console.log(idcardParse("652822199402046016"))
 ```
-####结果
+
+#### 结果
 ```
 {
     success: true,
