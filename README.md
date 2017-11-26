@@ -1,6 +1,9 @@
 # 爬取最新全国区划和城乡划分代码
 
-## 导出sqlite数据库
+## 为方便使用，已导出sqlite数据库文件
+
+![Alt text](./db2.jpg)
+
 ```
 --查询sql
 select a.tilte,a.level,b.total from (
@@ -17,7 +20,7 @@ union select '','',count(*) as total from region order by total
 ```
 #### 查询结果统计
 
-![Alt text](./db_result.jpg)
+![Alt text](./db1.jpg)
 
 - [sqlite数据库文件下载](https://github.com/godghdai/region_code/blob/master/store/database/region_code.zip)
 
