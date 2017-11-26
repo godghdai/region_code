@@ -10,11 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async": "^2.6.0",
     "cheerio": "^1.0.0-rc.2",
     "csv": "^2.0.0",
     "extend": "^3.0.1",
     "glob": "^7.1.2",
     "iconv-lite": "^0.4.19",
+    "knex": "^0.14.2",
     "lodash": "^4.17.4",
     "mz": "^2.7.0",
     "node-zip": "^1.1.1",

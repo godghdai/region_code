@@ -3,7 +3,7 @@ module.exports = {
     SQLITE_CONFIG: {
         client: 'sqlite3',
         connection: {
-            filename: path.resolve(__dirname, "./database.db")
+            filename: path.resolve(__dirname, "./store/database/region_code.db")
         },
         useNullAsDefault: false,
         debug: false
