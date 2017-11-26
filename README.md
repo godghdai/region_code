@@ -1,5 +1,44 @@
 # 爬取最新全国区划和城乡划分代码
 
+## 导出sqlite数据库
+```
+select a.tilte,a.level,b.total from (
+select "province" as tilte,1 as level 
+union select "city",2 
+union select "county",3 
+union select "town",4 
+union select "village",5 order by level) as a
+inner join (
+select level,count(*) as total from region group by level) as b 
+on a.level=b.level
+union select '','',count(*) as total from region order by total
+```
+####导出结果
+![Alt text](./db_result.jpg)
+
+- [sqlite数据库文件下载](https://github.com/godghdai/region_code/blob/master/store/database/region_code.zip)
+
+
+## 18位身份证号解析
+```
+const { idcardParse } = require("./src/util/Idcard");
+console.log(idcardParse("652822199402046016"))
+```
+####结果
+```
+{
+    success: true,
+    province: '新疆维吾尔自治区',
+    city: '巴音郭楞蒙古自治州',
+    county: '轮台县',
+    birthday: '1994年02月04日',
+    policeCode: 60,
+    sex: '男',
+    checkCode: '6'
+}
+```
+
+
 ## 如何使用
 
 ```
@@ -27,27 +66,6 @@ F:\tjcode>npm run start
 终止批处理操作吗(Y/N)?
 
 ```
-
-
-## 增加18位身份证号解析
-```
-const { idcardParse } = require("./src/util/Idcard");
-console.log(idcardParse("652822199402046016"))
-```
-```
-{
-    success: true,
-    province: '新疆维吾尔自治区',
-    city: '巴音郭楞蒙古自治州',
-    county: '轮台县',
-    birthday: '1994年02月04日',
-    policeCode: 60,
-    sex: '男',
-    checkCode: '6'
-}
-```
-
-
 
 
 ## JSON下载链接
