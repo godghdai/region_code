@@ -106,17 +106,6 @@ start().then(result => {
     console.log(err);
 });
 
-
-
-
-
-
-
-
-
-
-
-
 /*
 function mapLimitPromise(dir, limit) {
     async.auto({
